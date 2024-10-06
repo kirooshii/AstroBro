@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dciukgsdk25c7"]
+[gd_scene load_steps=9 format=3 uid="uid://dciukgsdk25c7"]
 
 [ext_resource type="PackedScene" uid="uid://c43gbnyp83ndf" path="res://scenes/HD_Scenes/AstroBro.tscn" id="1_xe5vv"]
 [ext_resource type="PackedScene" uid="uid://b1b1706qvda7x" path="res://scenes/HD_Scenes/BackGround.tscn" id="2_v4p28"]
 [ext_resource type="Script" path="res://scenes/HD_Scenes/back_ground.gd" id="3_pb2sc"]
 [ext_resource type="Texture2D" uid="uid://da2thtag17hxy" path="res://assets/HD_Assets/Rocky Roads/Tilesets/tileset_snow.png" id="4_qpr3j"]
 [ext_resource type="PackedScene" uid="uid://dchc341kni6f2" path="res://scenes/HD_Scenes/HD_Coins.tscn" id="5_ajohv"]
+[ext_resource type="FontFile" uid="uid://dpmqjjsa2yvll" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="6_v633g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wsq28"]
 texture = ExtResource("4_qpr3j")
@@ -89,3 +90,48 @@ position = Vector2(2754, -64)
 
 [node name="Coins5" parent="." instance=ExtResource("5_ajohv")]
 position = Vector2(3438, -162)
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 70.0
+offset_top = -203.0
+offset_right = 349.0
+offset_bottom = -173.0
+theme_override_fonts/font = ExtResource("6_v633g")
+theme_override_font_sizes/font_size = 7
+text = "Welcome to HD 189733b, 
+where blue skies mean glass rain and 
+hot winds!"
+
+[node name="Label3" type="Label" parent="Label3"]
+offset_left = 552.0
+offset_top = 17.0
+offset_right = 843.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("6_v633g")
+theme_override_font_sizes/font_size = 7
+text = "HD 189733b: where your umbrella is a must-have
+but don’t forget  it’s only useful if it can
+withstand glass shards 
+flying at you at 5,400 miles per hour!"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 2520.0
+offset_top = -87.0
+offset_right = 2827.0
+offset_bottom = -57.0
+theme_override_fonts/font = ExtResource("6_v633g")
+theme_override_font_sizes/font_size = 7
+text = "On HD 189733b, gravity is so intense that you'd be 
+squashed flat faster than a pancake! 
+Get ready for some serious weightlifting!"
+
+[node name="Label3" type="Label" parent="Label4"]
+offset_left = 775.0
+offset_top = -107.0
+offset_right = 1070.0
+offset_bottom = -77.0
+theme_override_fonts/font = ExtResource("6_v633g")
+theme_override_font_sizes/font_size = 7
+text = "HD 189733b zips around its star in just 2.2 days
+talk about a speedy orbit! It’s like living on a 
+planet where every day feels like a weekend!"

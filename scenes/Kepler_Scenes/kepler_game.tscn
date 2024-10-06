@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dgweeksrv5fn6"]
+[gd_scene load_steps=15 format=3 uid="uid://dgweeksrv5fn6"]
 
 [ext_resource type="PackedScene" uid="uid://c43gbnyp83ndf" path="res://scenes/HD_Scenes/AstroBro.tscn" id="1_2vs1k"]
 [ext_resource type="PackedScene" uid="uid://7fpc1crg36vy" path="res://scenes/Kepler_Scenes/Kepler_BG.tscn" id="2_3o2n7"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://stjn2ypsviyj" path="res://scenes/Kepler_Scenes/rock.tscn" id="6_bovxo"]
 [ext_resource type="PackedScene" uid="uid://cv2chfpaedkex" path="res://scenes/Kepler_Scenes/Coins_Kepler.tscn" id="7_efkpi"]
 [ext_resource type="PackedScene" uid="uid://dqt7vyolyf10g" path="res://killzone.tscn" id="8_fo72q"]
+[ext_resource type="FontFile" uid="uid://dpmqjjsa2yvll" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_7t8aq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txtsw"]
 texture = ExtResource("3_mhb4h")
@@ -146,3 +147,69 @@ position = Vector2(-41, -36)
 show_behind_parent = true
 position = Vector2(359, 905)
 shape = SubResource("WorldBoundaryShape2D_fk6c7")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 142.0
+offset_top = 455.0
+offset_right = 337.0
+offset_bottom = 485.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Welcome to Kepler-452b,
+where gravity hits harder
+And every step is an adventure!
+"
+
+[node name="Label" type="Label" parent="Label"]
+offset_left = 702.0
+offset_top = -43.0
+offset_right = 913.0
+offset_bottom = -13.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Kepler-452b might just have water
+so pack your swimsuit!
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 373.0
+offset_top = 423.0
+offset_right = 634.0
+offset_bottom = 455.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Squats all day here 
+with 18.63 m/s² 
+gravity hope you’re ready!!"
+
+[node name="Label2" type="Label" parent="Label2"]
+offset_left = 1543.0
+offset_top = -198.0
+offset_right = 1651.0
+offset_bottom = -168.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Oops! Careful
+this jump's a
+gravity workout!"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 2790.0
+offset_top = 405.0
+offset_right = 3069.0
+offset_bottom = 435.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Kepler-452b's orbital radius is just 1.046 AU
+the perfect spot for a cosmic picnic"
+
+[node name="Label3" type="Label" parent="Label3"]
+offset_left = 672.0
+offset_top = -15.0
+offset_right = 957.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("9_7t8aq")
+theme_override_font_sizes/font_size = 7
+text = "Kepler-452b takes 384.8 days to orbit its star
+so it's like having a longer year to 
+enjoy your space snacks!"
