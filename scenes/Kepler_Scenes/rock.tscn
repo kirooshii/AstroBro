@@ -1,72 +1,116 @@
-[gd_scene load_steps=10 format=3 uid="uid://stjn2ypsviyj"]
+[gd_scene load_steps=16 format=3 uid="uid://stjn2ypsviyj"]
 
-[ext_resource type="Texture2D" uid="uid://cyhxr6wt770um" path="res://assets/HD_Assets/Rocky Roads/Deco/rock.png" id="1_pfoj3"]
-[ext_resource type="Texture2D" uid="uid://kh7ddeu5m8mu" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (1).png" id="2_r3f8n"]
-[ext_resource type="Texture2D" uid="uid://bap647jasgn6a" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (2).png" id="3_il82e"]
-[ext_resource type="Texture2D" uid="uid://bafvjvsg22mvr" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (3).png" id="4_qj7em"]
-[ext_resource type="Texture2D" uid="uid://uq4aj2tk7dg4" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (17).png" id="5_nbtna"]
-[ext_resource type="Texture2D" uid="uid://c1b78f6cx4f78" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (30).png" id="6_gt5qh"]
-[ext_resource type="Texture2D" uid="uid://ceqknpo6lmu11" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (19).png" id="7_ydk77"]
-[ext_resource type="Texture2D" uid="uid://c4o6knksw8mxu" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (20).png" id="8_m7j5f"]
-[ext_resource type="Texture2D" uid="uid://cp8fjn7pk1wj2" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (14).png" id="9_de1xu"]
+[ext_resource type="Texture2D" uid="uid://cyhxr6wt770um" path="res://assets/HD_Assets/Rocky Roads/Deco/rock.png" id="1_7rl84"]
+[ext_resource type="Texture2D" uid="uid://kh7ddeu5m8mu" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (1).png" id="2_ph78y"]
+[ext_resource type="Texture2D" uid="uid://bap647jasgn6a" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (2).png" id="3_yfjkk"]
+[ext_resource type="Texture2D" uid="uid://bafvjvsg22mvr" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (3).png" id="4_i5636"]
+[ext_resource type="Texture2D" uid="uid://uq4aj2tk7dg4" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (17).png" id="5_y1jg8"]
+[ext_resource type="Texture2D" uid="uid://c1b78f6cx4f78" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (30).png" id="6_nfwlm"]
+[ext_resource type="Texture2D" uid="uid://ceqknpo6lmu11" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (19).png" id="7_q6fiq"]
+[ext_resource type="Texture2D" uid="uid://c4o6knksw8mxu" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (20).png" id="8_5xfqv"]
+[ext_resource type="Texture2D" uid="uid://cp8fjn7pk1wj2" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (14).png" id="9_5g6di"]
+[ext_resource type="Texture2D" uid="uid://bxv8t1k8xjcfe" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (27).png" id="10_o1yd5"]
+[ext_resource type="Texture2D" uid="uid://omiasd5170y6" path="res://assets/HD_Assets/Rocky Roads/Deco/bush.png" id="11_41ppq"]
+[ext_resource type="Texture2D" uid="uid://nobbujo2c1dr" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (6).png" id="12_02yk2"]
+[ext_resource type="Texture2D" uid="uid://crty0obutsl3m" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (7).png" id="13_vd6bv"]
+[ext_resource type="Texture2D" uid="uid://duh2dxji5asbe" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (12).png" id="14_6wca7"]
+[ext_resource type="Texture2D" uid="uid://ul10pvud07vb" path="res://assets/HD_Assets/plants and flowers/plants32/plants_ (26).png" id="15_563ts"]
 
 [node name="Rock" type="Sprite2D"]
 texture_filter = 1
 position = Vector2(719, 744)
-texture = ExtResource("1_pfoj3")
+texture = ExtResource("1_7rl84")
 
 [node name="Rock" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-604, 96)
-texture = ExtResource("1_pfoj3")
+texture = ExtResource("1_7rl84")
 
 [node name="Plants(1)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(73, 43)
-texture = ExtResource("2_r3f8n")
+texture = ExtResource("2_ph78y")
 
 [node name="Plants(2)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(57, 26)
-texture = ExtResource("3_il82e")
+texture = ExtResource("3_yfjkk")
 
 [node name="Plants(3)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(92, 58)
-texture = ExtResource("4_qj7em")
+texture = ExtResource("4_i5636")
 
 [node name="Plants(17)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(1202, -133)
-texture = ExtResource("5_nbtna")
+texture = ExtResource("5_y1jg8")
 
 [node name="Plants(30)" type="Sprite2D" parent="."]
 position = Vector2(1320, -167)
-texture = ExtResource("6_gt5qh")
+texture = ExtResource("6_nfwlm")
 
 [node name="Plants(19)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-589, 89)
-texture = ExtResource("7_ydk77")
+texture = ExtResource("7_q6fiq")
 
 [node name="Plants(17)2" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-565, -12)
-texture = ExtResource("5_nbtna")
+texture = ExtResource("5_y1jg8")
 
 [node name="Plants(20)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(458, 68.0001)
 rotation = 0.509636
 scale = Vector2(1.09375, 1)
-texture = ExtResource("8_m7j5f")
+texture = ExtResource("8_5xfqv")
 
 [node name="Plants(14)" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(489, 26)
-texture = ExtResource("9_de1xu")
+texture = ExtResource("9_5g6di")
 
 [node name="Plants(30)2" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-248, 25)
-texture = ExtResource("6_gt5qh")
+texture = ExtResource("6_nfwlm")
+
+[node name="Plants(27)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(701, -20)
+texture = ExtResource("10_o1yd5")
+
+[node name="Bush" type="Sprite2D" parent="."]
+position = Vector2(1667, -32)
+texture = ExtResource("11_41ppq")
+
+[node name="Plants(3)2" type="Sprite2D" parent="."]
+position = Vector2(1821, -29)
+texture = ExtResource("4_i5636")
+
+[node name="Plants(6)" type="Sprite2D" parent="Plants(3)2"]
+texture_filter = 1
+position = Vector2(827, 27)
+texture = ExtResource("12_02yk2")
+
+[node name="Plants(7)" type="Sprite2D" parent="Plants(3)2/Plants(6)"]
+texture_filter = 1
+position = Vector2(152, -2)
+texture = ExtResource("13_vd6bv")
+
+[node name="Plants(12)" type="Sprite2D" parent="Plants(3)2/Plants(6)"]
+texture_filter = 1
+position = Vector2(-492, 32)
+texture = ExtResource("14_6wca7")
+
+[node name="Plants(20)" type="Sprite2D" parent="Plants(3)2/Plants(6)/Plants(12)"]
+texture_filter = 1
+position = Vector2(197, 19)
+texture = ExtResource("8_5xfqv")
+
+[node name="Plants(26)" type="Sprite2D" parent="Plants(3)2/Plants(6)/Plants(12)/Plants(20)"]
+texture_filter = 1
+position = Vector2(566, -69)
+texture = ExtResource("15_563ts")
