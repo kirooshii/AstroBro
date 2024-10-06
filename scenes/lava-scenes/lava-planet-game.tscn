@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://dmlvh5tdt20w6"]
+[gd_scene load_steps=34 format=4 uid="uid://dmlvh5tdt20w6"]
 
 [ext_resource type="PackedScene" uid="uid://cds3oxqo4dxir" path="res://scenes/lava-scenes/player.tscn" id="1_wjyq3"]
 [ext_resource type="Texture2D" uid="uid://jrdgdx3byu6w" path="res://assets/lava-assets/Rocky Roads/Deco/lava.png" id="2_is4ci"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://djog5lje51gcj" path="res://scenes/lava-scenes/coin.tscn" id="10_1wob6"]
 [ext_resource type="PackedScene" uid="uid://s2a20l0icqoa" path="res://scenes/lava-scenes/killzone.tscn" id="11_4dqtw"]
 [ext_resource type="PackedScene" uid="uid://xvk34qbwsf0w" path="res://scenes/lava-scenes/parallax_background.tscn" id="12_4eynq"]
+[ext_resource type="FontFile" uid="uid://dpmqjjsa2yvll" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="14_qym1s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lp415"]
 texture = ExtResource("2_is4ci")
@@ -661,3 +662,36 @@ libraries = {
 autoplay = "move"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("12_4eynq")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 50.0
+offset_right = 185.0
+offset_bottom = 73.0
+theme_override_fonts/font = ExtResource("14_qym1s")
+theme_override_font_sizes/font_size = 7
+text = "Orbiting at 0.01544 AU
+don’t forget sunscreen!
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1150.0
+offset_top = 106.0
+offset_right = 1402.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("14_qym1s")
+theme_override_font_sizes/font_size = 7
+text = "1.875x Earth radius?
+ More room for lava!
+"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 1487.0
+offset_top = -1.0
+offset_right = 1784.0
+offset_bottom = 22.0
+theme_override_fonts/font = ExtResource("14_qym1s")
+theme_override_font_sizes/font_size = 7
+text = "Radial velocity method: 
+Can you feel the speed?
+"
