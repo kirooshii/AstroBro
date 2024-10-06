@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://cds3oxqo4dxir"]
+
+[ext_resource type="Texture2D" uid="uid://h3u64oofxyj2" path="res://assets/lava-assets/ASTRONAUT BANNET/Astronaut.png" id="1_arjof"]
+[ext_resource type="Script" path="res://scripts/lava-scripts/player.gd" id="1_pg6qj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fornd"]
+atlas = ExtResource("1_arjof")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcqh5"]
+atlas = ExtResource("1_arjof")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mmcd"]
+atlas = ExtResource("1_arjof")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qavh"]
+atlas = ExtResource("1_arjof")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jqdku"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fornd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcqh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mmcd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qavh")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qcc2f"]
+radius = 11.1803
+
+[node name="player" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_pg6qj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 5
+position = Vector2(1, -14)
+scale = Vector2(0.792725, 0.694336)
+sprite_frames = SubResource("SpriteFrames_jqdku")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.0340147
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -12)
+shape = SubResource("CircleShape2D_qcc2f")
