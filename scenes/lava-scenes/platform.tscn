@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bffcv7lq4vya2" path="res://assets/lava-assets/Rocky Roads/Tilesets/tileset_lava.png" id="1_qu5iq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqvur"]
-size = Vector2(56, 25)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axfyf"]
+size = Vector2(89, 16)
 
 [node name="platform" type="AnimatableBody2D"]
 
@@ -15,5 +15,5 @@ region_enabled = true
 region_rect = Rect2(171.5, 14.25, 58, 15.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -2.5)
-shape = SubResource("RectangleShape2D_tqvur")
+position = Vector2(-2, -8)
+shape = SubResource("RectangleShape2D_axfyf")
