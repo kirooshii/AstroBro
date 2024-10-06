@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://cjhckq81ncmai"]
 
-[ext_resource type="Texture2D" uid="uid://djhjjecsbwhm8" path="res://assets/lava-assets/lavaplanet.png" id="1_46uwn"]
-[ext_resource type="Texture2D" uid="uid://yhxmehogb3u6" path="res://assets/main-menu/level-select.png" id="1_anoll"]
-[ext_resource type="Script" path="res://scripts/main-menu/level_selection.gd" id="1_tpkk4"]
-[ext_resource type="Theme" uid="uid://bi0ijr5h3wj85" path="res://themes/main menu/buttons2.tres" id="2_a2e3s"]
-[ext_resource type="Texture2D" uid="uid://boqedatutenav" path="res://assets/main-menu/rockwater.png" id="4_v2b1q"]
-[ext_resource type="Texture2D" uid="uid://bk1dsbjc8fvko" path="res://assets/main-menu/gas2.png" id="6_652he"]
+[ext_resource type="Script" path="res://scripts/main-menu/level_selection.gd" id="1_cfii3"]
+[ext_resource type="Texture2D" uid="uid://yhxmehogb3u6" path="res://assets/main-menu/level-select.png" id="2_1xkvt"]
+[ext_resource type="Theme" uid="uid://bi0ijr5h3wj85" path="res://themes/main menu/buttons2.tres" id="3_4uy8r"]
+[ext_resource type="Texture2D" uid="uid://djhjjecsbwhm8" path="res://assets/lava-assets/lavaplanet.png" id="4_7hb0o"]
+[ext_resource type="Texture2D" uid="uid://boqedatutenav" path="res://assets/main-menu/rockwater.png" id="5_265lk"]
+[ext_resource type="Texture2D" uid="uid://bk1dsbjc8fvko" path="res://assets/main-menu/gas2.png" id="6_5hnth"]
 
 [node name="level-selection" type="Control"]
 layout_mode = 3
@@ -14,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tpkk4")
+script = ExtResource("1_cfii3")
 
 [node name="BG" type="TextureRect" parent="."]
 layout_mode = 1
@@ -24,7 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1, 0.997833)
-texture = ExtResource("1_anoll")
+texture = ExtResource("2_1xkvt")
 
 [node name="Select-Exoplanet" type="Label" parent="."]
 layout_mode = 2
@@ -35,7 +35,7 @@ offset_bottom = 284.0
 scale = Vector2(1, 1.00395)
 size_flags_horizontal = 4
 size_flags_vertical = 2
-theme = ExtResource("2_a2e3s")
+theme = ExtResource("3_4uy8r")
 theme_override_font_sizes/font_size = 64
 text = "Select Exoplanet"
 horizontal_alignment = 1
@@ -63,12 +63,12 @@ theme_override_constants/separation = -100
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture_normal = ExtResource("1_46uwn")
+texture_normal = ExtResource("4_7hb0o")
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Lava"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource("2_a2e3s")
+theme = ExtResource("3_4uy8r")
 text = "55 Cancri e
 A lava world with sparkling skies"
 horizontal_alignment = 1
@@ -81,12 +81,12 @@ theme_override_constants/separation = -100
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture_normal = ExtResource("4_v2b1q")
+texture_normal = ExtResource("5_265lk")
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Kepler"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme = ExtResource("2_a2e3s")
+theme = ExtResource("3_4uy8r")
 text = "Kepler-452 b
 A potentially rocky world, larger than Earth"
 horizontal_alignment = 1
@@ -99,13 +99,13 @@ theme_override_constants/separation = -100
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture_normal = ExtResource("6_652he")
+texture_normal = ExtResource("6_5hnth")
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/HD"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
-theme = ExtResource("2_a2e3s")
+theme = ExtResource("3_4uy8r")
 text = "HD 189733 b
 A giant planet where it rains glass"
 horizontal_alignment = 1
