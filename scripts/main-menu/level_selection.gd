@@ -1,14 +1,13 @@
 extends Control
 
 func _on_lavaplanet_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/lava-scenes/lava-planet-game.tscn")
+	get_tree().change_scene_to_file("res://scenes/main-menu/lava-loading-screen.tscn")
 	
 
 
 func _on_waterplanet_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/Kepler_Scenes/kepler_game.tscn")
-
+	get_tree().change_scene_to_file("res://scenes/main-menu/kepler-loading-screen.tscn")
 
 
 func _on_rockyplanet_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/HD_Scenes/hd-game.tscn")
+	get_tree().change_scene_to_file("res://scenes/main-menu/hd-loading-screen.tscn")
