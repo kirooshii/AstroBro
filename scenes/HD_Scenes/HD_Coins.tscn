@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://dchc341kni6f2"]
+
+[ext_resource type="Script" path="res://scripts/Kepler_Scripts/coin_2d.gd" id="1_ctldm"]
+[ext_resource type="Texture2D" uid="uid://b15md3rrel5oj" path="res://assets/HD_Assets/Rocky Roads/UI/coin.png" id="2_1i6e4"]
+[ext_resource type="Script" path="res://scenes/HD_Scenes/collision_shape_2d.gd" id="2_hvvk6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_svd3h"]
+radius = 9.0
+height = 18.0
+
+[sub_resource type="Animation" id="Animation_pw40w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite_Gold:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_7q6g5"]
+resource_name = "Silver_Coin"
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite_Gold:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rdxoh"]
+_data = {
+"RESET": SubResource("Animation_pw40w"),
+"Silver_Coin": SubResource("Animation_7q6g5")
+}
+
+[node name="Coins" type="Node2D"]
+
+[node name="Coin2D" type="Area2D" parent="."]
+script = ExtResource("1_ctldm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin2D"]
+position = Vector2(-54, 38)
+shape = SubResource("CapsuleShape2D_svd3h")
+script = ExtResource("2_hvvk6")
+
+[node name="Sprite_Gold" type="Sprite2D" parent="Coin2D"]
+texture_filter = 1
+position = Vector2(-54.5, 38.1641)
+scale = Vector2(1.1875, 1.10449)
+texture = ExtResource("2_1i6e4")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Coin2D"]
+libraries = {
+"": SubResource("AnimationLibrary_rdxoh")
+}
+autoplay = "Silver_Coin"
+
+[connection signal="body_entered" from="Coin2D" to="Coin2D" method="_on_body_entered"]
