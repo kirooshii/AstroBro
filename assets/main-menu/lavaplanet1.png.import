@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu3p34geyhver"
-path="res://.godot/imported/lavaplanet.png-38b0023266760d4414b4aecf1f3f2cc8.ctex"
+uid="uid://b3mcnqik0qi3k"
+path="res://.godot/imported/lavaplanet1.png-9b824c6d830d75136bb756b4c8ed09e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/main-menu/lavaplanet.png"
-dest_files=["res://.godot/imported/lavaplanet.png-38b0023266760d4414b4aecf1f3f2cc8.ctex"]
+source_file="res://assets/main-menu/lavaplanet1.png"
+dest_files=["res://.godot/imported/lavaplanet1.png-9b824c6d830d75136bb756b4c8ed09e5.ctex"]
 
 [params]
 

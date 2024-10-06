@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/main-menu/level_selection.gd" id="1_cfii3"]
 [ext_resource type="Texture2D" uid="uid://yhxmehogb3u6" path="res://assets/main-menu/level-select.png" id="2_1xkvt"]
 [ext_resource type="Theme" uid="uid://bi0ijr5h3wj85" path="res://themes/main menu/buttons2.tres" id="3_4uy8r"]
-[ext_resource type="Texture2D" uid="uid://djhjjecsbwhm8" path="res://assets/lava-assets/lavaplanet.png" id="4_7hb0o"]
+[ext_resource type="Texture2D" uid="uid://b3mcnqik0qi3k" path="res://assets/main-menu/lavaplanet1.png" id="4_p1ena"]
 [ext_resource type="Texture2D" uid="uid://boqedatutenav" path="res://assets/main-menu/rockwater.png" id="5_265lk"]
 [ext_resource type="Texture2D" uid="uid://bk1dsbjc8fvko" path="res://assets/main-menu/gas2.png" id="6_5hnth"]
 
@@ -63,7 +63,7 @@ theme_override_constants/separation = -100
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-texture_normal = ExtResource("4_7hb0o")
+texture_normal = ExtResource("4_p1ena")
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Lava"]
 layout_mode = 2
