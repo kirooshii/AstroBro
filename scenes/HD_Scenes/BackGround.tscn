@@ -14,7 +14,7 @@ motion_mirroring = Vector2(1900, 0)
 
 [node name="Deep_Blue_BG" type="Sprite2D" parent="ParallaxLayer"]
 texture_filter = 1
-position = Vector2(959.5, 540)
+position = Vector2(961, -395)
 scale = Vector2(3.33507, 3.33333)
 texture = ExtResource("2_11dnx")
 
@@ -24,12 +24,12 @@ motion_mirroring = Vector2(1900, 0)
 
 [node name="3" type="Sprite2D" parent="ParallaxLayer2"]
 texture_filter = 1
-position = Vector2(959, 599.5)
+position = Vector2(960, -334)
 scale = Vector2(3.33333, 2.9537)
 texture = ExtResource("3_ek8il")
 
 [node name="4" type="Sprite2D" parent="ParallaxLayer2"]
 texture_filter = 1
-position = Vector2(960, 666.069)
+position = Vector2(960, -269)
 scale = Vector2(3.33333, 2.55513)
 texture = ExtResource("4_fl64p")
