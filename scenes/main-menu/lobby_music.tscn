@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqj7sawyjh47t"]
+
+[ext_resource type="AudioStream" uid="uid://du7h7bppls6r" path="res://assets/music/audio/lobby.ogg" id="1_3l6yk"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_3l6yk")
+autoplay = true
+bus = &"Lobby"

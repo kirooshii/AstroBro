@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfuk2x6eyi4do"
+path="res://.godot/imported/Three Red Hearts - Penguin Town.ogg-d462349ad264316c295c881972d93c6d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/three-red-hearts-prepare-to-dev-download/Three Red Hearts - Penguin Town.ogg"
+dest_files=["res://.godot/imported/Three Red Hearts - Penguin Town.ogg-d462349ad264316c295c881972d93c6d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
