@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqbnd05lkf223"]
+
+[ext_resource type="Texture2D" uid="uid://bffcv7lq4vya2" path="res://assets/lava-assets/Rocky Roads/Tilesets/tileset_lava.png" id="1_qu5iq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqvur"]
+size = Vector2(56, 25)
+
+[node name="platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.999996, 2)
+scale = Vector2(1.82759, 3.03333)
+texture = ExtResource("1_qu5iq")
+region_enabled = true
+region_rect = Rect2(171.5, 14.25, 58, 15.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -2.5)
+shape = SubResource("RectangleShape2D_tqvur")

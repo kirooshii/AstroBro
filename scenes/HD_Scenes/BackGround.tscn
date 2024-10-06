@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1b1706qvda7x"]
+
+[ext_resource type="Script" path="res://scripts/HD_Scripts/bg.gd" id="1_s4ntf"]
+[ext_resource type="Texture2D" uid="uid://bfuc8ejqixa6r" path="res://assets/HD_Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/1.png" id="2_11dnx"]
+[ext_resource type="Texture2D" uid="uid://hy7g7laimkwu" path="res://assets/HD_Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/3.png" id="3_ek8il"]
+[ext_resource type="Texture2D" uid="uid://b2h468fx3uk7j" path="res://assets/HD_Assets/free-sky-with-clouds-background-pixel-art-set/Clouds/Clouds 3/4.png" id="4_fl64p"]
+
+[node name="HD_BG" type="ParallaxBackground"]
+script = ExtResource("1_s4ntf")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_mirroring = Vector2(1900, 0)
+
+[node name="Deep_Blue_BG" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+position = Vector2(959.5, 540)
+scale = Vector2(3.33507, 3.33333)
+texture = ExtResource("2_11dnx")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+texture_filter = 1
+motion_mirroring = Vector2(1900, 0)
+
+[node name="3" type="Sprite2D" parent="ParallaxLayer2"]
+texture_filter = 1
+position = Vector2(959, 599.5)
+scale = Vector2(3.33333, 2.9537)
+texture = ExtResource("3_ek8il")
+
+[node name="4" type="Sprite2D" parent="ParallaxLayer2"]
+texture_filter = 1
+position = Vector2(960, 666.069)
+scale = Vector2(3.33333, 2.55513)
+texture = ExtResource("4_fl64p")
