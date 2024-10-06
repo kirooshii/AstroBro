@@ -10,6 +10,7 @@ script = ExtResource("1_r8pgn")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 texture_filter = 1
+position = Vector2(1, -913)
 motion_mirroring = Vector2(1900, 0)
 
 [node name="Kepler_BG" type="Sprite2D" parent="ParallaxLayer"]
@@ -20,6 +21,7 @@ texture = ExtResource("2_qyga4")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 texture_filter = 1
+position = Vector2(1, -913)
 motion_mirroring = Vector2(1898, 0)
 
 [node name="4" type="Sprite2D" parent="ParallaxLayer2"]
