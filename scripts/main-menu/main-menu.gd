@@ -7,7 +7,7 @@ extends Control
 
 #click button to go the settings
 func _on_options_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/options.tscn")
+	get_tree().change_scene_to_file("res://scenes/main-menu/options.tscn")
 	
 #click button to exit the game
 func _on_exit_pressed() -> void:
