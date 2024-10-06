@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dciukgsdk25c7"]
+[gd_scene load_steps=9 format=3 uid="uid://dciukgsdk25c7"]
 
 [ext_resource type="PackedScene" uid="uid://c43gbnyp83ndf" path="res://scenes/HD_Scenes/AstroBro.tscn" id="1_xe5vv"]
 [ext_resource type="PackedScene" uid="uid://b1b1706qvda7x" path="res://scenes/HD_Scenes/BackGround.tscn" id="2_v4p28"]
 [ext_resource type="Script" path="res://scenes/HD_Scenes/back_ground.gd" id="3_pb2sc"]
 [ext_resource type="Texture2D" uid="uid://da2thtag17hxy" path="res://assets/HD_Assets/Rocky Roads/Tilesets/tileset_snow.png" id="4_qpr3j"]
 [ext_resource type="PackedScene" uid="uid://dchc341kni6f2" path="res://scenes/HD_Scenes/HD_Coins.tscn" id="5_ajohv"]
+[ext_resource type="PackedScene" uid="uid://b8r6hy7gyhehj" path="res://scenes/main-menu/esc_menu.tscn" id="6_4yk10"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wsq28"]
 texture = ExtResource("4_qpr3j")
@@ -89,3 +90,5 @@ position = Vector2(2738, 862)
 
 [node name="Coins5" parent="." instance=ExtResource("5_ajohv")]
 position = Vector2(3422, 764)
+
+[node name="Control" parent="." instance=ExtResource("6_4yk10")]

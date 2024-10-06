@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8r6hy7gyhehj"]
+
+[ext_resource type="Script" path="res://scripts/main-menu/esc_menu.gd" id="1_386km"]
+[ext_resource type="Theme" uid="uid://bi0ijr5h3wj85" path="res://themes/main menu/buttons2.tres" id="2_15cqw"]
+
+[node name="Control" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_386km")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -24.0
+offset_right = 69.5
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_15cqw")
+text = "Restart"
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]

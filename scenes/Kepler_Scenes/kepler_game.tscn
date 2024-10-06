@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dgweeksrv5fn6"]
+[gd_scene load_steps=13 format=3 uid="uid://dgweeksrv5fn6"]
 
 [ext_resource type="PackedScene" uid="uid://c43gbnyp83ndf" path="res://scenes/HD_Scenes/AstroBro.tscn" id="1_2vs1k"]
 [ext_resource type="PackedScene" uid="uid://7fpc1crg36vy" path="res://scenes/Kepler_Scenes/Kepler_BG.tscn" id="2_3o2n7"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://jcia5ww2o5eo" path="res://assets/HD_Assets/Rocky Roads/FX/shine_white.png" id="5_781nd"]
 [ext_resource type="PackedScene" uid="uid://stjn2ypsviyj" path="res://scenes/Kepler_Scenes/rock.tscn" id="6_bovxo"]
 [ext_resource type="PackedScene" uid="uid://cv2chfpaedkex" path="res://scenes/Kepler_Scenes/Coins_Kepler.tscn" id="7_efkpi"]
+[ext_resource type="PackedScene" uid="uid://b8r6hy7gyhehj" path="res://scenes/main-menu/esc_menu.tscn" id="8_ksqyg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txtsw"]
 texture = ExtResource("3_mhb4h")
@@ -131,3 +132,7 @@ position = Vector2(3491, 695)
 
 [node name="Coins" parent="." instance=ExtResource("7_efkpi")]
 position = Vector2(274, 765)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("8_ksqyg")]

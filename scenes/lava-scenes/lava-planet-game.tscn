@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://dmlvh5tdt20w6"]
+[gd_scene load_steps=34 format=4 uid="uid://dmlvh5tdt20w6"]
 
 [ext_resource type="PackedScene" uid="uid://cds3oxqo4dxir" path="res://scenes/lava-scenes/player.tscn" id="1_wjyq3"]
 [ext_resource type="Texture2D" uid="uid://jrdgdx3byu6w" path="res://assets/lava-assets/Rocky Roads/Deco/lava.png" id="2_is4ci"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://djog5lje51gcj" path="res://scenes/lava-scenes/coin.tscn" id="10_1wob6"]
 [ext_resource type="PackedScene" uid="uid://s2a20l0icqoa" path="res://scenes/lava-scenes/killzone.tscn" id="11_4dqtw"]
 [ext_resource type="PackedScene" uid="uid://xvk34qbwsf0w" path="res://scenes/lava-scenes/parallax_background.tscn" id="12_4eynq"]
+[ext_resource type="PackedScene" uid="uid://b8r6hy7gyhehj" path="res://scenes/main-menu/esc_menu.tscn" id="14_q50cq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lp415"]
 texture = ExtResource("2_is4ci")
@@ -661,3 +662,7 @@ libraries = {
 autoplay = "move"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("12_4eynq")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("14_q50cq")]
