@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr2bkxbk80083"
-path="res://.godot/imported/r2.png-595e9f5fae8a159781e65d3869bb5d7d.ctex"
+path="res://.godot/imported/r2.png-0a4d9ca316958378ab7bcf77ce439a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animation/r2.png"
-dest_files=["res://.godot/imported/r2.png-595e9f5fae8a159781e65d3869bb5d7d.ctex"]
+source_file="res://assets/rocket-animation/r2.png"
+dest_files=["res://.godot/imported/r2.png-0a4d9ca316958378ab7bcf77ce439a88.ctex"]
 
 [params]
 
