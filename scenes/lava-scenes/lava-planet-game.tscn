@@ -695,3 +695,14 @@ theme_override_font_sizes/font_size = 7
 text = "Radial velocity method: 
 Can you feel the speed?
 "
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 3018.0
+offset_top = 89.0
+offset_right = 3315.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("14_qym1s")
+theme_override_font_sizes/font_size = 7
+text = "      Found in 2004 
+before selfies were a thing!
+"
